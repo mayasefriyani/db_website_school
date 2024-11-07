@@ -23,5 +23,5 @@ Route::post('/login', [AuthController::class, 'authenticate']);
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard.layout.main');
+    return view('dashboard.index');
 })->middleware('auth');
